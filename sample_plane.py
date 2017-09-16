@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 13 09:46:17 2017
-
-@author: Kafung
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Thu Aug 31 22:05:55 2017
 
 @author: Kafung
