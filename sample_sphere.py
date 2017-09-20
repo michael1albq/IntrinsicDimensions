@@ -22,7 +22,7 @@ def sample_sphere(n, c):
     vec /= np.linalg.norm(vec, axis=0)
     recenter = np.repeat(c, n)
     recenter = np.reshape(recenter, (3, n))
-    vec = vec + recenter
+    vec += recenter
     return np.transpose(vec)
 
 if __name__ == "__main__":
