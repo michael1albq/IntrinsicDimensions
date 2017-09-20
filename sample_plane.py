@@ -5,26 +5,38 @@ Created on Thu Aug 31 22:05:55 2017
 @author: Kafung
 """
 
-import numpy as np 
+import numpy as np
 
 
 def sample_plane(n):
-    
+    """
+    Outputs sample points from a random plane in R^3 as a matrix of the form nx3
+
+    :param n: Number of points on the plane to be sampled
+    :return: Coordinates of the n points on the plane [x,y,z]
+
+    Note: Points on the plane must satisfy the equation (n1,n2,n3).(x-p1, y-p2, z-p3) = 0, where . operation represents
+    the dot product, (n1,n2,n3) is the normal vector and (p1,p2,p3) is a point on the plane.
+
+    We randomly sample for x and y and solve for z using the above equation.
+
+    """
+
     normal_vec = np.random.randn(3)
     point_plane = np.random.randn(3)
-    sample_points = []
+    plane_points = []
 
-    for int in range(0, n):
+    for i in range(0, n):
         sample_2coord = np.random.randn(2)
         last_coord = sample_2coord - point_plane[0:2]
-        last_coord = -(np.dot(normal_vec[0:2], last_coord)-normal_vec[2] * point_plane[2])/normal_vec[2]
+        last_coord = -(np.dot(normal_vec[0:2], last_coord) - normal_vec[2] * point_plane[2]) / normal_vec[2]
         sample_2coord = np.append(sample_2coord, last_coord)
-        sample_points = np.append(sample_points, sample_2coord, axis=0)
+        plane_points = np.append(plane_points, sample_2coord)
 
-    sample_points = np.reshape(sample_points, (n,3))
+    plane_points = np.reshape(plane_points, (n, 3))
 
-    return sample_points
+    return plane_points
+
 
 if __name__ == "__main__":
     print(sample_plane(10))
-
