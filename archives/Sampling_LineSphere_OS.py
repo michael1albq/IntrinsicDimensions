@@ -5,18 +5,12 @@
 
 # In[1]:
 
-#%run Sampling_Points_Individually.py
-import Sampling_Points_GEO as SPI
-from Sampling_Points_GEO import *
+import numpy as np
 
+# %run Sampling_Points_Individually.py
+from archives import Sampling_Points_GEO as SPI
 
 # In[2]:
-
-import numpy as np
-from matplotlib import pyplot
-from mpl_toolkits.mplot3d import Axes3D
-from numpy.random import rand
-from pylab import figure
 get_ipython().magic('matplotlib inline')
 
 
@@ -109,7 +103,6 @@ np.linalg.svd(Sample_LS)[1]
 
 from matplotlib import pyplot
 from mpl_toolkits.mplot3d import Axes3D
-from numpy.random import rand
 from pylab import figure
 
 

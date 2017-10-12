@@ -3,20 +3,10 @@
 
 # In[1]:
 
-#%run 
-import Sampling_Points_GEO as SPI
-from Sampling_Points_GEO import *
-import Sampling_LineSphere_OS as SPS
-from Sampling_LineSphere_OS import *
-
+# %run
+from archives.Sampling_LineSphere_OS import *
 
 # In[15]:
-
-import numpy as np
-from matplotlib import pyplot
-from mpl_toolkits.mplot3d import Axes3D
-from numpy.random import rand
-from pylab import figure
 get_ipython().magic('matplotlib inline')
 
 
@@ -78,7 +68,6 @@ for i in SP_Plane:
 
 from matplotlib import pyplot
 from mpl_toolkits.mplot3d import Axes3D
-from numpy.random import rand
 from pylab import figure
 
 
@@ -161,7 +150,6 @@ for i in sphere_line:
 
 from matplotlib import pyplot
 from mpl_toolkits.mplot3d import Axes3D
-from numpy.random import rand
 from pylab import figure
 
 
