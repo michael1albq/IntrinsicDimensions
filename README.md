@@ -1,7 +1,15 @@
 # IntrinsicDimensions
 
-Aim: To run SVD on various data sets to find the intrinsic dimensions of sampled points
+Full Code in "Full Intrinsic Dimension Code.ipynb"
 
-Data set 1: Intersection of point, line and sphere
+# Functionality
 
-sample_line, sample_plane and sample_sphere randomly generate points on a line/plane/sphere 
+(1) Generates points on line, plane, sphere , plane & sphere, line & plane & sphere, plot these points and run SVD
+(2) Run SVD on the 'Bridge_87K' Data Set and visualize intrinsic dimensions of neighborhoods on points on the bridge
+
+# Project Team Members
+Michael Albuquerque (michael1albq)
+Kafung Mok (kmok002)
+Naren Sundar (narensun1)
+Ranvir Singh (ranvir28singh)
+
